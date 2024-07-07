@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+<body>
+    <nav>
+        <div><button class="navbtn"><img src="menu icon.svg" alt="menu"></button></div>
+        <div id="toprightmenu">
+            <div><button class="navbtn"><img src="theme icon.svg" alt=""></button></div>
+            <div><button class="navbtn"><img src="settings icon.svg" alt=""></button></div>
+            <div><button class="navbtn"><img src="user icon.svg" alt=""></button></div>
+        </div>
+    </nav>
+    <div class="topheading">
+        <div>
+            <h2>Data Structures and Algorithm</h2>
+            <p>Welcome to DS & Algo Student progress Dashboard</p>
+        </div>
+        <button id="downloadreportbutton">Download Reports</button>
+    </div>
+    <div class="optandstats">
+        <div class="topcardparent">
+            <div class="topcard">
+                <label for="examdd">Select Exam</label>
+                <select id="examdd">
+                    <option value="iat1">IAT-1</option>
+                    <option value="iat2">IAT-2</option>
+                    <option value="cce1">CCE-1</option>
+                    <option value="cce2">CCE-2</option>
+                    <option value="see">SEE</option>
+                </select>
+            </div>
+            <div class="topcard">
+                <div class="dropdown">
+                    <label for="filterby">Filter by</label>
+                    <select id="filterby">
+                        <option value="pass">Passed</option>
+                        <option value="fail">Failed</option>
+                        <option value="excel">Excelled</option>
+                        <option value="noteligible">Not Eligible</option>
+                        <option value="eligible">Eligible</option>
+                    </select>
+                </div>
+            </div>
+            <div class="topcard">Card3</div>
+            <div class="topcard">Card4</div>
+        </div>
+        <div class="bargraph">
+            <canvas id="mybarGraph"></canvas>
+        </div>
+    </div>
+    <div class="lastsection">
+        <div id="studentdetail">
+            <!-- Students Details -->
+            <table>
+                <tr>
+                    <th><u> USN</u></th>
+                    <th><u> Name</u></th>
+                    <th><u> Marks-1 (50)</u></th>
+                    <th><u> Marks-2 (50)</u></th>
+                    <th><u> Marks-3 (50)</u></th>
+                </tr>
+                <tr>
+                    <td>XY001</td>
+                    <td>Student 1</td>
+                    <td>45</td>
+                    <td>24</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY002</td>
+                    <td>Student 2</td>
+                    <td>34</td>
+                    <td>44</td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td>XY003</td>
+                    <td>Student 3</td>
+                    <td>38</td>
+                    <td>29</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>XY004</td>
+                    <td>Student 4</td>
+                    <td>45</td>
+                    <td>45</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY005</td>
+                    <td>Student 5</td>
+                    <td>34</td>
+                    <td>21</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>XY123</td>
+                    <td>Student</td>
+                    <td>40</td>
+                    <td>49</td>
+                    <td>48</td>
+                </tr>
+            </table>
+        </div>
+        <div id="piechart">
+            <canvas id="mypieChart"></canvas>
+        </div>
+    </div>
+    <!-- JS Script for chart/graph -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="mainscript.js"></script>
+</body>
+
+</html>

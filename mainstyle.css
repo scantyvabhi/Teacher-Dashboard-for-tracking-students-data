@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: rgb(0, 56, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(158, 179, 255, 0.947) 60%,
+    rgba(90, 212, 255, 1) 100%
+    );
+    /* background-color: rgb(255, 255, 255); */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 3vh 5vh;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid grey;
+  padding: 15px 40px;
+  border-radius: 30px;
+}
+#toprightmenu {
+  display: flex;
+  justify-content: space-between;
+  width: 16vw;
+}
+.navbtn {
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  border: transparent;
+}
+.navbtn:hover {
+  background-color: rgb(205, 205, 205);
+  border: 1px solid black;
+  filter: invert(1);
+  scale: 1.2;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.topheading {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin: 10px;
+}
+#downloadreportbutton {
+  width: 280px;
+  height: 60px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1em;
+  font-weight: 550;
+  font-family: "Montserrat", sans-serif;
+}
+#downloadreportbutton:hover {
+  background: #315cfd;
+  color: white;
+  border: 2px solid white;
+  font-size: 1.1em;
+}
+.optandstats {
+  display: flex;
+  justify-content: space-between;
+}
+.topcardparent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  /* width: 40vw; */
+}
+.topcard {
+  height: 25vh;
+  width: 20vw;
+  border: 2px solid grey;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px;
+}
+.bargraph {
+  width: 100%;
+  border: 2px solid grey;
+  margin: 0px 0px 0px 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.lastsection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#studentdetail {
+  width: 60vw;
+  border: 2px solid grey;
+  max-height: 80vh;
+  border-radius: 10px;
+  padding: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden ;
+}
+#piechart {
+  width: 40vw;
+  border: 2px solid grey;
+  max-height: 80vh;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 10px;
+}
+.topcard,.bargraph,#studentdetail,#piechart{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+#examdd , #filterby{
+  padding: 5px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: auto 10px;
+  font-size: 1.2rem;
+}
+#examdd:hover , #filterby:hover{
+  background-color: rgb(232, 232, 232);
+}
+#studentdetail{
+  display: flex;
+  flex-direction: column;
+}
+table{
+  border: 2px solid black;
+  padding: 20px;
+  width: 98%;
+  text-align: center;
+  margin: 10px;
+  overflow: scroll;
+}
+tr {
+  /* border-bottom: 1px solid #ddd; */
+}
+tr:hover {background-color: #c0ffff;}
+td{
+  border-bottom: 1px solid black;
+}
+
+/* Media Quesry */
+@media only screen and (max-width: 600px) {
+  body{
+    font-size: 1rem;
+    padding: 10px;
+  }
+  nav{
+    border-radius: 7px;
+    padding: 5px;
+  }
+  #toprightmenu{
+    width: 40vw;
+  }
+  .topheading,.optandstats,.topcardparent,.lastsection{
+    display: flex;
+    flex-direction: column;
+  }
+  #downloadreportbutton{
+    margin: 10px auto;
+  }
+  .topcard{
+    width: 80vw;
+    margin: 10px auto;
+  }
+  .bargraph{
+    width: 90vw;
+    margin: 5px auto;
+  }
+  #studentdetail{
+    width: 90vw;
+    margin: 5px auto;
+  }
+  #piechart{
+    width: 90vw;
+    margin: 10px auto;
+    height: 100vh;
+    overflow: scroll;
+    padding: 15px 5px;
+  }
+}
